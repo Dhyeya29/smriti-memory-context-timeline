@@ -1,0 +1,12 @@
+{
+  "projectId": "smriti-ai-memory",
+  "appId": "1:986174101255:web:03293b79306136e936d7a2",
+  "apiKey": "AIzaSyALL5KV-vFwYvB5Xl6n9fV6kWoKpS4l8Ac",
+  "authDomain": "smriti-ai-memory.firebaseapp.com",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "smriti-ai-memory.firebasestorage.app",
+  "messagingSenderId": "986174101255",
+  "measurementId": "",
+  "oAuthClientId": "",
+  "recaptchaSiteKey": ""
+}

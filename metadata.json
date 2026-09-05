@@ -1,0 +1,6 @@
+{
+  "name": "Smriti - AI Memory & Context Timeline",
+  "description": "A private AI memory and context timeline that captures life events, decisions, and goals through natural multi-turn conversations with Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,82 @@
+{
+  "entities": {
+    "Memory": {
+      "title": "Memory",
+      "description": "A user's synthesized personal memory record and context inquiry transcript",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique memory ID"
+        },
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the memory owner"
+        },
+        "title": {
+          "type": "string",
+          "description": "Descriptive title of the memory or decision"
+        },
+        "approximateDate": {
+          "type": "string",
+          "description": "Approximate date or timeframe of the memory"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category: Career, Decisions, Projects, Health, Personal, Relationships, Milestone"
+        },
+        "whatHappened": {
+          "type": "string",
+          "description": "Summary of the core event or decision"
+        },
+        "importantContext": {
+          "type": "string",
+          "description": "Unstated pressures, constraints, and mental model at the time"
+        },
+        "goalsOrDecisions": {
+          "type": "string",
+          "description": "Specific goals sought and trade-offs made"
+        },
+        "whatChanged": {
+          "type": "string",
+          "description": "Subsequent shifts, mindset evolution, or changed reality"
+        },
+        "whatRemainsUnclear": {
+          "type": "string",
+          "description": "Lingering uncertainties, doubts, or unresolved questions"
+        },
+        "keyLessons": {
+          "type": "array",
+          "description": "Key retrospective lessons"
+        },
+        "tags": {
+          "type": "array",
+          "description": "Classification tags"
+        },
+        "conversation": {
+          "type": "array",
+          "description": "Multi-turn interview transcript between user and Gemini scribe"
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Creation timestamp in milliseconds"
+        },
+        "updatedAt": {
+          "type": "number",
+          "description": "Last update timestamp in milliseconds"
+        },
+        "userNotes": {
+          "type": "string",
+          "description": "Optional personal notes or reflections"
+        }
+      },
+      "required": ["id", "userId", "title", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/memories/{memoryId}": {
+      "schema": "Memory",
+      "description": "Private memories isolated strictly per authenticated user UID"
+    }
+  }
+}

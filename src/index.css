@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FAF8F5;
+    color: #2D2723;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  }
+}
+
+/* Journal ruled notebook lines */
+.journal-ruled-bg {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    rgba(215, 207, 195, 0.4) 31px,
+    rgba(215, 207, 195, 0.4) 32px
+  );
+  line-height: 32px;
+}
+
+.journal-paper-sheet {
+  background-color: #FCFAF7;
+  background-image: radial-gradient(rgba(224, 215, 202, 0.18) 1px, transparent 1px);
+  background-size: 24px 24px;
+  box-shadow: 
+    0 1px 3px rgba(45, 39, 35, 0.04),
+    0 8px 24px -6px rgba(45, 39, 35, 0.06),
+    0 24px 48px -12px rgba(45, 39, 35, 0.03);
+}
+
+.journal-margin-line {
+  border-left: 1.5px solid rgba(214, 158, 166, 0.45);
+}
+
+/* Subtle paper texture/look */
+.paper-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EBE5DC;
+  box-shadow: 0 2px 8px -2px rgba(45, 39, 35, 0.04), 0 1px 2px rgba(45, 39, 35, 0.03);
+}
+
+.paper-card-warm {
+  background-color: #FCFAF7;
+  border: 1px solid #E8E1D5;
+  box-shadow: 0 2px 10px -2px rgba(45, 39, 35, 0.05);
+}
+
+.paper-card-sage {
+  background-color: #F4F7F4;
+  border: 1px solid #DFE8DF;
+}
+
+.paper-card-rose {
+  background-color: #FAF5F5;
+  border: 1px solid #F0E3E3;
+}
+
+.paper-card-ochre {
+  background-color: #FAF7EF;
+  border: 1px solid #EFE8D6;
+}
+
+/* Custom delicate scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D0C5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BDB3A6;
+}
